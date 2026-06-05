@@ -144,7 +144,229 @@
             Text: ="Gestion de Clientes"
             Width: =800
             ZIndex: =1
+        DashboardRow2 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =460
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Horizontal
+            LayoutGap: =16
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Width: =Parent.Width
+            ZIndex: =3
 
+            EmployeesGalleryPanel As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(250, 250, 252, 1)
+                Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =12
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Width: =(Parent.Width - 32) / 2
+                ZIndex: =1
+
+                EmployeesPanelTitle As label:
+                    Align: =Align.Left
+                    Color: =RGBA(26, 26, 46, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.SemiBold
+                    Height: =28
+                    Size: =16
+                    Text: ="Empleados"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                EmployeeCard01 As groupContainer.verticalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =100
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =4
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingBottom: =12
+                    PaddingLeft: =12
+                    PaddingRight: =12
+                    PaddingTop: =12
+                    RadiusBottomLeft: =12
+                    RadiusBottomRight: =12
+                    RadiusTopLeft: =12
+                    RadiusTopRight: =12
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    EmployeeName01 As label:
+                        Align: =Align.Left
+                        Color: =RGBA(26, 26, 46, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =24
+                        Size: =16
+                        Text: ="Carlos Mendoza"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    EmployeeRole01 As label:
+                        Align: =Align.Left
+                        Color: =RGBA(120, 130, 150, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        Height: =20
+                        Size: =13
+                        Text: ="Desarrollador Senior"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                EmployeeCard02 As groupContainer.verticalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =100
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =4
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingBottom: =12
+                    PaddingLeft: =12
+                    PaddingRight: =12
+                    PaddingTop: =12
+                    RadiusBottomLeft: =12
+                    RadiusBottomRight: =12
+                    RadiusTopLeft: =12
+                    RadiusTopRight: =12
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    EmployeeName02 As label:
+                        Align: =Align.Left
+                        Color: =RGBA(26, 26, 46, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =24
+                        Size: =16
+                        Text: ="María López"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    EmployeeRole02 As label:
+                        Align: =Align.Left
+                        Color: =RGBA(120, 130, 150, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        Height: =20
+                        Size: =13
+                        Text: ="Diseñadora UX/UI"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+            DocumentsGalleryPanel As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(250, 250, 252, 1)
+                Height: =Parent.Height
+                LayoutAlignItems: =LayoutAlignItems.Stretch
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =12
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Width: =(Parent.Width - 32) / 2
+                ZIndex: =2
+
+                DocumentsPanelTitle As label:
+                    Align: =Align.Left
+                    Color: =RGBA(26, 26, 46, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.SemiBold
+                    Height: =28
+                    Size: =16
+                    Text: ="Documentos compartidos"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                DocumentCard01 As groupContainer.verticalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =90
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =4
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingBottom: =12
+                    PaddingLeft: =12
+                    PaddingRight: =12
+                    PaddingTop: =12
+                    RadiusBottomLeft: =12
+                    RadiusBottomRight: =12
+                    RadiusTopLeft: =12
+                    RadiusTopRight: =12
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    DocumentTitle01 As label:
+                        Align: =Align.Left
+                        Color: =RGBA(26, 26, 46, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =22
+                        Size: =15
+                        Text: ="Manual del empleado.pdf"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    DocumentMeta01 As label:
+                        Align: =Align.Left
+                        Color: =RGBA(120, 130, 150, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        Height: =18
+                        Size: =13
+                        Text: ="PDF • 24 de mayo"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                DocumentCard02 As groupContainer.verticalAutoLayoutContainer:
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =90
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =4
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingBottom: =12
+                    PaddingLeft: =12
+                    PaddingRight: =12
+                    PaddingTop: =12
+                    RadiusBottomLeft: =12
+                    RadiusBottomRight: =12
+                    RadiusTopLeft: =12
+                    RadiusTopRight: =12
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                    DocumentTitle02 As label:
+                        Align: =Align.Left
+                        Color: =RGBA(26, 26, 46, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =22
+                        Size: =15
+                        Text: ="Resumen mensual.xlsx"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                    DocumentMeta02 As label:
+                        Align: =Align.Left
+                        Color: =RGBA(120, 130, 150, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Normal
+                        Height: =18
+                        Size: =13
+                        Text: ="XLSX • 28 de mayo"
+                        Width: =Parent.Width
+                        ZIndex: =1
         PageSubtitleLabel2 As label:
             Align: =Align.Center
             Color: =RGBA(100, 110, 130, 1)
