@@ -134,6 +134,8 @@
     "UserLocale": "es-ES"
   },
   "ScreenOrder": [
-    "Screen1"
+    "Screen1",
+    "ClientesScreen",
+    "TicketsScreen"
   ]
 }
