@@ -166,7 +166,7 @@ ClientesScreen As screen:
             Width: =800
             ZIndex: =2
 
-        SearchBoxEmpleados As textInput:
+        SearchBoxEmpleados As text:
             BorderColor: =RGBA(220, 222, 230, 1)
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
