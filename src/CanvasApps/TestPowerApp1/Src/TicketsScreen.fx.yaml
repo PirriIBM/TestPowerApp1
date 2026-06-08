@@ -170,11 +170,11 @@ TicketsScreen As screen:
         BorderColor: =RGBA(245, 245, 245, 1)
         DelayItemLoading: =true
         Height: =499
-        Items: =CustomGallerySample
+        Items: =Documents
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =104
+        TemplateSize: =120
         Width: =1064
         X: =280
         Y: =193
@@ -213,7 +213,7 @@ TicketsScreen As screen:
             PaddingLeft: =12
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.SampleHeading
+            Text: =ThisItem.Name
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 173
             X: =103
@@ -232,7 +232,7 @@ TicketsScreen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.SampleText
+            Text: ="Por: " & ThisItem.Author.DisplayName & "  |  Mod: " & Text(ThisItem.Modified, "dd/mm/yyyy") & "  |  Creado: " & Text(ThisItem.Created, "dd/mm/yyyy")
             VerticalAlign: =VerticalAlign.Top
             Width: =Title3.Width
             X: =Title3.X
