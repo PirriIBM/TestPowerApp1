@@ -7,12 +7,12 @@
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
 Screens:
-  Screen1:
+  ClientesScreen:
     Properties:
       Fill: =RGBA(240, 244, 248, 1)
       LoadingSpinnerColor: =RGBA(0, 51, 102, 1)
     Children:
-      - SideNavContainer1:
+      - SideNavContainer2:
           Control: GroupContainer@1.5.0
           Variant: AutoLayout
           Properties:
@@ -27,7 +27,7 @@ Screens:
             RadiusTopRight: =0
             Width: =250
           Children:
-            - NavLogoLabel1:
+            - NavLogoLabel2:
                 Control: Label@2.5.1
                 Properties:
                   Align: =Align.Center
@@ -43,7 +43,7 @@ Screens:
                   Size: =20
                   Text: ="MyApp"
                   Width: =250
-            - NavDivider1:
+            - NavDivider2:
                 Control: Rectangle@2.3.0
                 Properties:
                   BorderColor: =RGBA(0, 0, 255, 1)
@@ -54,39 +54,7 @@ Screens:
                   LayoutMinHeight: =0
                   LayoutMinWidth: =0
                   Width: =250
-            - NavHomeBtn1:
-                Control: Classic/Button@2.2.0
-                Properties:
-                  Align: =Align.Left
-                  BorderColor: =RGBA(0, 0, 0, 0)
-                  BorderStyle: =%BorderStyle.RESERVED%.Solid
-                  BorderThickness: =0
-                  Color: =RGBA(255, 255, 255, 1)
-                  DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                  DisabledColor: =ColorFade(Self.Fill, 90%)
-                  DisabledFill: =ColorFade(Self.Fill, 70%)
-                  DisplayMode: =%DisplayMode.RESERVED%.Edit
-                  Fill: =RGBA(0, 120, 212, 1)
-                  Font: =Font.'Segoe UI'
-                  Height: =56
-                  HoverBorderColor: =RGBA(0, 0, 0, 0)
-                  HoverColor: =RGBA(255, 255, 255, 1)
-                  HoverFill: =RGBA(0, 100, 180, 1)
-                  LayoutMinHeight: =0
-                  LayoutMinWidth: =0
-                  OnSelect: =Navigate(Screen1, ScreenTransition.Fade)
-                  PaddingLeft: =24
-                  PressedBorderColor: =RGBA(0, 0, 0, 0)
-                  PressedColor: =RGBA(255, 255, 255, 1)
-                  PressedFill: =RGBA(0, 80, 160, 1)
-                  RadiusBottomLeft: =0
-                  RadiusBottomRight: =0
-                  RadiusTopLeft: =0
-                  RadiusTopRight: =0
-                  Text: ="Home"
-                  VerticalAlign: =%VerticalAlign.RESERVED%.Middle
-                  Width: =250
-            - NavClientesBtn1:
+            - NavHomeBtn2:
                 Control: Classic/Button@2.2.0
                 Properties:
                   Align: =Align.Left
@@ -107,6 +75,38 @@ Screens:
                   HoverFill: =RGBA(50, 50, 80, 1)
                   LayoutMinHeight: =0
                   LayoutMinWidth: =0
+                  OnSelect: =Navigate(Screen1, ScreenTransition.Fade)
+                  PaddingLeft: =24
+                  PressedBorderColor: =RGBA(0, 0, 0, 0)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(0, 80, 160, 1)
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Text: ="Home"
+                  VerticalAlign: =%VerticalAlign.RESERVED%.Middle
+                  Width: =250
+            - NavClientesBtn2:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  Align: =Align.Left
+                  BorderColor: =RGBA(0, 0, 0, 0)
+                  BorderStyle: =%BorderStyle.RESERVED%.Solid
+                  BorderThickness: =0
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                  DisabledColor: =ColorFade(Self.Fill, 90%)
+                  DisabledFill: =ColorFade(Self.Fill, 70%)
+                  DisplayMode: =%DisplayMode.RESERVED%.Edit
+                  Fill: =RGBA(0, 120, 212, 1)
+                  Font: =Font.'Segoe UI'
+                  Height: =56
+                  HoverBorderColor: =RGBA(0, 0, 0, 0)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =RGBA(0, 100, 180, 1)
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
                   OnSelect: =Navigate(ClientesScreen, ScreenTransition.Fade)
                   PaddingLeft: =24
                   PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -119,7 +119,7 @@ Screens:
                   Text: ="Clientes"
                   VerticalAlign: =%VerticalAlign.RESERVED%.Middle
                   Width: =250
-            - NavTicketsBtn1:
+            - NavTicketsBtn2:
                 Control: Classic/Button@2.2.0
                 Properties:
                   Align: =Align.Left
@@ -152,7 +152,7 @@ Screens:
                   Text: ="Tickets"
                   VerticalAlign: =%VerticalAlign.RESERVED%.Middle
                   Width: =250
-      - ContentArea1:
+      - ContentArea2:
           Control: GroupContainer@1.5.0
           Variant: AutoLayout
           Properties:
@@ -173,7 +173,7 @@ Screens:
             Width: =Parent.Width - 250
             X: =250
           Children:
-            - PageTitleLabel1:
+            - PageTitleLabel2:
                 Control: Label@2.5.1
                 Properties:
                   Align: =Align.Center
@@ -184,9 +184,9 @@ Screens:
                   FontWeight: =FontWeight.Bold
                   Height: =80
                   Size: =36
-                  Text: ="Bienvenido a Home"
+                  Text: ="Gestion de Clientes"
                   Width: =800
-            - PageSubtitleLabel1:
+            - PageSubtitleLabel2:
                 Control: Label@2.5.1
                 Properties:
                   Align: =Align.Center
@@ -196,5 +196,112 @@ Screens:
                   Font: =Font.'Segoe UI'
                   Height: =50
                   Size: =18
-                  Text: ="Tu panel de control principal"
+                  Text: ="Consulta y gestiona tu cartera de clientes"
                   Width: =800
+            - GalleryEmployees:
+                Control: Gallery@2.15.0
+                Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
+                Properties:
+                  BorderColor: =RGBA(245, 245, 245, 1)
+                  LayoutMinHeight: =16
+                  LayoutMinWidth: =16
+                Children:
+                  - Image2:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =2
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        DisabledFill: =RGBA(0, 0, 0, 0)
+                        FocusedBorderThickness: =4
+                        Height: =72
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnSelect: =Select(Parent)
+                        PressedBorderColor: =RGBA(0, 0, 0, 0)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =72
+                        X: =16
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                  - Title2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(50, 49, 48, 1)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =12
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =ThisItem.SampleHeading
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Parent.TemplateWidth - 173
+                        X: =103
+                        Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
+                  - Subtitle2:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(96, 94, 92, 1)
+                        DisabledColor: =RGBA(161, 159, 157, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =12
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =12
+                        Text: =ThisItem.SampleText
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Title2.Width
+                        X: =Title2.X
+                        Y: =Title2.Y + Title2.Height
+                  - NextArrow2:
+                      Control: Classic/Icon@2.5.0
+                      Properties:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(166, 166, 166, 1)
+                        DisabledBorderColor: =RGBA(56, 56, 56, 1)
+                        DisabledColor: =RGBA(119, 119, 119, 1)
+                        Height: =50
+                        Icon: =Icon.ChevronRight
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =16
+                        PaddingLeft: =16
+                        PaddingRight: =16
+                        PaddingTop: =16
+                        Tooltip: ="Ver los detalles del elemento"
+                        Width: =50
+                        X: =Parent.TemplateWidth - Self.Width - 12
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                  - Separator2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =8
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - Self.Height
+                  - Rectangle2:
+                      Control: Rectangle@2.3.0
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(0, 120, 212, 1)
+                        Height: =Parent.TemplateHeight - Separator2.Height
+                        OnSelect: =Select(Parent)
+                        Visible: =ThisItem.IsSelected
+                        Width: =4

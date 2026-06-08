@@ -116,7 +116,7 @@
     "FileID": "26c09fe1-83df-4bb6-8669-d3d67a53e007",
     "Id": "26c09fe1-83df-4bb6-8669-d3d67a53e007",
     "LocalDatabaseReferences": "",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "TestPowerApp1",
     "OriginatingVersion": "1.349",
     "ParserErrorCount": 0,

@@ -1,4 +1,4 @@
-"ClientesScreen As screen":
+ClientesScreen As screen:
     Fill: =RGBA(240, 244, 248, 1)
 
     SideNavContainer2 As groupContainer.verticalAutoLayoutContainer:
@@ -6,15 +6,8 @@
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
-        LayoutGap: =0
         LayoutMode: =LayoutMode.Auto
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
         Width: =250
-        X: =0
-        Y: =0
         ZIndex: =1
 
         NavLogoLabel2 As label:
@@ -24,6 +17,8 @@
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
             Height: =80
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
             PaddingLeft: =16
             PaddingRight: =16
             Size: =20
@@ -34,6 +29,10 @@
         NavDivider2 As rectangle:
             Fill: =RGBA(255, 255, 255, 0.1)
             Height: =1
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
             Width: =250
             ZIndex: =2
 
@@ -45,11 +44,14 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(26, 26, 46, 1)
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Normal
             Height: =56
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(50, 50, 80, 1)
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
             OnSelect: =Navigate(Screen1, ScreenTransition.Fade)
             PaddingLeft: =24
             PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -68,7 +70,6 @@
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
-            Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(0, 120, 212, 1)
             Font: =Font.'Segoe UI'
@@ -77,6 +78,10 @@
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 100, 180, 1)
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
             OnSelect: =Navigate(ClientesScreen, ScreenTransition.Fade)
             PaddingLeft: =24
             PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -99,11 +104,14 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(26, 26, 46, 1)
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Normal
             Height: =56
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(50, 50, 80, 1)
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
             OnSelect: =Navigate(TicketsScreen, ScreenTransition.Fade)
             PaddingLeft: =24
             PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -131,7 +139,6 @@
         PaddingTop: =32
         Width: =Parent.Width - 250
         X: =250
-        Y: =0
         ZIndex: =2
 
         PageTitleLabel2 As label:
@@ -140,240 +147,129 @@
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
             Height: =80
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
             Size: =36
             Text: ="Gestion de Clientes"
             Width: =800
             ZIndex: =1
-        DashboardRow2 As groupContainer.horizontalAutoLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =460
-            LayoutAlignItems: =LayoutAlignItems.Stretch
-            LayoutDirection: =LayoutDirection.Horizontal
-            LayoutGap: =16
-            LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            Width: =Parent.Width
-            ZIndex: =3
 
-            EmployeesGalleryPanel As groupContainer.verticalAutoLayoutContainer:
-                Fill: =RGBA(250, 250, 252, 1)
-                Height: =Parent.Height
-                LayoutAlignItems: =LayoutAlignItems.Stretch
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =12
-                LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Width: =(Parent.Width - 32) / 2
-                ZIndex: =1
-
-                EmployeesPanelTitle As label:
-                    Align: =Align.Left
-                    Color: =RGBA(26, 26, 46, 1)
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.SemiBold
-                    Height: =28
-                    Size: =16
-                    Text: ="Empleados"
-                    Width: =Parent.Width
-                    ZIndex: =1
-
-                EmployeeCard01 As groupContainer.verticalAutoLayoutContainer:
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =100
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutGap: =4
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingBottom: =12
-                    PaddingLeft: =12
-                    PaddingRight: =12
-                    PaddingTop: =12
-                    RadiusBottomLeft: =12
-                    RadiusBottomRight: =12
-                    RadiusTopLeft: =12
-                    RadiusTopRight: =12
-                    Width: =Parent.Width
-                    ZIndex: =1
-
-                    EmployeeName01 As label:
-                        Align: =Align.Left
-                        Color: =RGBA(26, 26, 46, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =24
-                        Size: =16
-                        Text: ="Carlos Mendoza"
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-                    EmployeeRole01 As label:
-                        Align: =Align.Left
-                        Color: =RGBA(120, 130, 150, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Normal
-                        Height: =20
-                        Size: =13
-                        Text: ="Desarrollador Senior"
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-                EmployeeCard02 As groupContainer.verticalAutoLayoutContainer:
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =100
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutGap: =4
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingBottom: =12
-                    PaddingLeft: =12
-                    PaddingRight: =12
-                    PaddingTop: =12
-                    RadiusBottomLeft: =12
-                    RadiusBottomRight: =12
-                    RadiusTopLeft: =12
-                    RadiusTopRight: =12
-                    Width: =Parent.Width
-                    ZIndex: =1
-
-                    EmployeeName02 As label:
-                        Align: =Align.Left
-                        Color: =RGBA(26, 26, 46, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =24
-                        Size: =16
-                        Text: ="María López"
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-                    EmployeeRole02 As label:
-                        Align: =Align.Left
-                        Color: =RGBA(120, 130, 150, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Normal
-                        Height: =20
-                        Size: =13
-                        Text: ="Diseñadora UX/UI"
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-            DocumentsGalleryPanel As groupContainer.verticalAutoLayoutContainer:
-                Fill: =RGBA(250, 250, 252, 1)
-                Height: =Parent.Height
-                LayoutAlignItems: =LayoutAlignItems.Stretch
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =12
-                LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Width: =(Parent.Width - 32) / 2
-                ZIndex: =2
-
-                DocumentsPanelTitle As label:
-                    Align: =Align.Left
-                    Color: =RGBA(26, 26, 46, 1)
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.SemiBold
-                    Height: =28
-                    Size: =16
-                    Text: ="Documentos compartidos"
-                    Width: =Parent.Width
-                    ZIndex: =1
-
-                DocumentCard01 As groupContainer.verticalAutoLayoutContainer:
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =90
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutGap: =4
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingBottom: =12
-                    PaddingLeft: =12
-                    PaddingRight: =12
-                    PaddingTop: =12
-                    RadiusBottomLeft: =12
-                    RadiusBottomRight: =12
-                    RadiusTopLeft: =12
-                    RadiusTopRight: =12
-                    Width: =Parent.Width
-                    ZIndex: =1
-
-                    DocumentTitle01 As label:
-                        Align: =Align.Left
-                        Color: =RGBA(26, 26, 46, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =22
-                        Size: =15
-                        Text: ="Manual del empleado.pdf"
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-                    DocumentMeta01 As label:
-                        Align: =Align.Left
-                        Color: =RGBA(120, 130, 150, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Normal
-                        Height: =18
-                        Size: =13
-                        Text: ="PDF • 24 de mayo"
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-                DocumentCard02 As groupContainer.verticalAutoLayoutContainer:
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =90
-                    LayoutAlignItems: =LayoutAlignItems.Stretch
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutGap: =4
-                    LayoutMode: =LayoutMode.Auto
-                    PaddingBottom: =12
-                    PaddingLeft: =12
-                    PaddingRight: =12
-                    PaddingTop: =12
-                    RadiusBottomLeft: =12
-                    RadiusBottomRight: =12
-                    RadiusTopLeft: =12
-                    RadiusTopRight: =12
-                    Width: =Parent.Width
-                    ZIndex: =1
-
-                    DocumentTitle02 As label:
-                        Align: =Align.Left
-                        Color: =RGBA(26, 26, 46, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =22
-                        Size: =15
-                        Text: ="Resumen mensual.xlsx"
-                        Width: =Parent.Width
-                        ZIndex: =1
-
-                    DocumentMeta02 As label:
-                        Align: =Align.Left
-                        Color: =RGBA(120, 130, 150, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Normal
-                        Height: =18
-                        Size: =13
-                        Text: ="XLSX • 28 de mayo"
-                        Width: =Parent.Width
-                        ZIndex: =1
         PageSubtitleLabel2 As label:
             Align: =Align.Center
             Color: =RGBA(100, 110, 130, 1)
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Normal
             Height: =50
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
             Size: =18
             Text: ="Consulta y gestiona tu cartera de clientes"
             Width: =800
             ZIndex: =2
+
+        "GalleryEmployees As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            BorderColor: =RGBA(245, 245, 245, 1)
+            DelayItemLoading: =true
+            Items: =Empleados
+            Layout: =Layout.Vertical
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            LayoutMinHeight: =16
+            LayoutMinWidth: =16
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =104
+            ZIndex: =3
+
+            Image2 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =72
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                OnSelect: =Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =72
+                X: =16
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            Title2 As label:
+                Color: =RGBA(50, 49, 48, 1)
+                DisabledColor: =RGBA(161, 159, 157, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =12
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Title
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 173
+                X: =103
+                Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
+                ZIndex: =2
+
+            Subtitle2 As label:
+                Color: =RGBA(96, 94, 92, 1)
+                DisabledColor: =RGBA(161, 159, 157, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =12
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.Email
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title2.Width
+                X: =Title2.X
+                Y: =Title2.Y + Title2.Height
+                ZIndex: =3
+
+            NextArrow2 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(166, 166, 166, 1)
+                Height: =50
+                Icon: =Icon.ChevronRight
+                OnSelect: =Select(Parent)
+                PaddingBottom: =16
+                PaddingLeft: =16
+                PaddingRight: =16
+                PaddingTop: =16
+                Tooltip: ="Ver los detalles del elemento"
+                Width: =50
+                X: =Parent.TemplateWidth - Self.Width - 12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =4
+
+            Separator2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =5
+
+            Rectangle2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(0, 120, 212, 1)
+                Height: =Parent.TemplateHeight - Separator2.Height
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =6
+

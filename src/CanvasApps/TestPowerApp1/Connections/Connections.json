@@ -1,1 +1,28 @@
-{}
+{
+  "9e68c04a-c173-4738-be0c-df3fd278807f": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1813/1.0.1813.4743/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://viewnextdev.sharepoint.com/sites/DevelopersVN": {
+        "dataSources": {
+          "Documents": {
+            "tableName": "da2a6133-a106-4369-b9b8-aeeec3b3df67"
+          },
+          "Empleados": {
+            "tableName": "a72e6181-9dc0-490c-9a9a-af74a2666642"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Documents",
+      "Empleados"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9e68c04a-c173-4738-be0c-df3fd278807f"
+  }
+}
