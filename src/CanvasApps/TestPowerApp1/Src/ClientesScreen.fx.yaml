@@ -171,6 +171,7 @@ ClientesScreen As screen:
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =1
             Color: =RGBA(50, 49, 48, 1)
+            Default: =""
             Fill: =RGBA(255, 255, 255, 1)
             Font: =Font.'Segoe UI'
             Height: =40
