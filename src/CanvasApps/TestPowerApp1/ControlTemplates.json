@@ -153,5 +153,10 @@
     "Name": "screen",
     "OverridableProperties": {},
     "Version": "1.0"
+  },
+  "text": {
+    "IsPcfControl": false,
+    "IsWidgetTemplate": false,
+    "Name": "text"
   }
 }

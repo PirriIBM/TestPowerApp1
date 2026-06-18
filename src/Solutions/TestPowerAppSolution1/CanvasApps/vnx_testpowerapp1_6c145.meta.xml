@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>vnx_testpowerapp1_6c145</Name>
-  <AppVersion>2026-06-08T08:11:28Z</AppVersion>
+  <AppVersion>2026-06-11T08:42:09Z</AppVersion>
   <Status>Ready</Status>
   <CreatedByClientVersion>3.26054.13.0</CreatedByClientVersion>
   <MinClientVersion>3.26054.13.0</MinClientVersion>
@@ -10,8 +10,8 @@
   <GalleryItemId xsi:nil="true"></GalleryItemId>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
   <DisplayName>TestPowerApp1</DisplayName>
-  <Description xsi:nil="true"></Description>
-  <CommitMessage xsi:nil="true"></CommitMessage>
+  <Description></Description>
+  <CommitMessage></CommitMessage>
   <Publisher></Publisher>
   <AuthorizationReferences>[]</AuthorizationReferences>
   <ConnectionReferences>{"9e68c04a-c173-4738-be0c-df3fd278807f":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://static.powerapps.com/resource/ppcr/releases/v1.0.1813/1.0.1813.4743/sharepointonline/icon.png","dataSources":["Documents","Empleados"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://viewnextdev.sharepoint.com/sites/DevelopersVN":{"dataSources":{"Documents":{"tableName":"da2a6133-a106-4369-b9b8-aeeec3b3df67"},"Empleados":{"tableName":"a72e6181-9dc0-490c-9a9a-af74a2666642"}}}},"apiTier":"Standard"}}</ConnectionReferences>
