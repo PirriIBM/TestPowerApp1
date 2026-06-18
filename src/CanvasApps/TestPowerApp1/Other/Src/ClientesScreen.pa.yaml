@@ -184,7 +184,7 @@ Screens:
                   FontWeight: =FontWeight.Bold
                   Height: =80
                   Size: =36
-                  Text: ="Gestion de Clientes"
+                  Text: ="Gestion de Clientes 2"
                   Width: =800
             - PageSubtitleLabel2:
                 Control: Label@2.5.1

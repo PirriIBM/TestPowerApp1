@@ -150,7 +150,7 @@ ClientesScreen As screen:
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
             Size: =36
-            Text: ="Gestion de Clientes"
+            Text: ="Gestion de Clientes 2"
             Width: =800
             ZIndex: =1
 
