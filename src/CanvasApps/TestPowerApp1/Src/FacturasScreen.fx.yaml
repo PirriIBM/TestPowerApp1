@@ -1,7 +1,7 @@
-Screen1 As screen:
+FacturasScreen As screen:
     Fill: =RGBA(240, 244, 248, 1)
 
-    SideNavContainer1 As groupContainer.verticalAutoLayoutContainer:
+    SideNavContainer4 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(26, 26, 46, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -10,7 +10,7 @@ Screen1 As screen:
         Width: =250
         ZIndex: =1
 
-        NavLogoLabel1 As label:
+        NavLogoLabel4 As label:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(15, 15, 30, 1)
@@ -26,7 +26,7 @@ Screen1 As screen:
             Width: =250
             ZIndex: =1
 
-        NavDivider1 As rectangle:
+        NavDivider4 As rectangle:
             Fill: =RGBA(255, 255, 255, 0.1)
             Height: =1
             LayoutMaxHeight: =0
@@ -36,18 +36,18 @@ Screen1 As screen:
             Width: =250
             ZIndex: =2
 
-        NavHomeBtn1 As button:
+        NavHomeBtn4 As button:
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
+            Color: =RGBA(200, 200, 220, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(0, 120, 212, 1)
+            Fill: =RGBA(26, 26, 46, 1)
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
             Height: =56
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =RGBA(0, 100, 180, 1)
+            HoverFill: =RGBA(50, 50, 80, 1)
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
             LayoutMinHeight: =0
@@ -66,7 +66,7 @@ Screen1 As screen:
             Width: =250
             ZIndex: =3
 
-        NavClientesBtn1 As button:
+        NavClientesBtn4 As button:
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
@@ -96,7 +96,7 @@ Screen1 As screen:
             Width: =250
             ZIndex: =4
 
-        NavTicketsBtn1 As button:
+        NavTicketsBtn4 As button:
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
@@ -126,18 +126,18 @@ Screen1 As screen:
             Width: =250
             ZIndex: =5
 
-        NavFacturasBtn1 As button:
+        NavFacturasBtn4 As button:
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
-            Color: =RGBA(200, 200, 220, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(26, 26, 46, 1)
+            Fill: =RGBA(0, 120, 212, 1)
             Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
             Height: =56
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =RGBA(50, 50, 80, 1)
+            HoverFill: =RGBA(0, 100, 180, 1)
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
             LayoutMinHeight: =0
@@ -156,7 +156,7 @@ Screen1 As screen:
             Width: =250
             ZIndex: =6
 
-    ContentArea1 As groupContainer.verticalAutoLayoutContainer:
+    ContentArea4 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(240, 244, 248, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Center
@@ -171,7 +171,7 @@ Screen1 As screen:
         X: =250
         ZIndex: =2
 
-        PageTitleLabel1 As label:
+        PageTitleLabel4 As label:
             Align: =Align.Center
             Color: =RGBA(26, 26, 46, 1)
             Font: =Font.'Segoe UI'
@@ -180,22 +180,11 @@ Screen1 As screen:
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
             Size: =36
-            Text: ="Bienvenido a Home"
+            Text: ="Facturas"
             Width: =800
             ZIndex: =1
 
-        LblHolaCline1 As label:
-            Align: =Align.Center
-            Color: =RGBA(26, 26, 46, 1)
-            Font: =Font.'Segoe UI'
-            LayoutMaxHeight: =0
-            LayoutMaxWidth: =0
-            Size: =16
-            Text: ="Hola desde Cline"
-            Width: =800
-            ZIndex: =2
-
-        PageSubtitleLabel1 As label:
+        PageSubtitleLabel4 As label:
             Align: =Align.Center
             Color: =RGBA(100, 110, 130, 1)
             Font: =Font.'Segoe UI'
@@ -203,7 +192,18 @@ Screen1 As screen:
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
             Size: =18
-            Text: ="Tu panel de control principal"
+            Text: ="Consulta y gestiona tus facturas"
+            Width: =800
+            ZIndex: =2
+
+        LblFacturasProximamente As label:
+            Align: =Align.Center
+            Color: =RGBA(100, 110, 130, 1)
+            Font: =Font.'Segoe UI'
+            Height: =60
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            Size: =16
+            Text: ="Proximamente disponible"
             Width: =800
             ZIndex: =3
-

@@ -126,6 +126,36 @@ TicketsScreen As screen:
             Width: =250
             ZIndex: =5
 
+        NavFacturasBtn3 As button:
+            Align: =Align.Left
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =0
+            Color: =RGBA(200, 200, 220, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(26, 26, 46, 1)
+            Font: =Font.'Segoe UI'
+            Height: =56
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(50, 50, 80, 1)
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            OnSelect: =Navigate(FacturasScreen, ScreenTransition.Fade)
+            PaddingLeft: =24
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 80, 160, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: ="Facturas"
+            Width: =250
+            ZIndex: =6
+
     ContentArea3 As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(240, 244, 248, 1)
         Height: =Parent.Height
