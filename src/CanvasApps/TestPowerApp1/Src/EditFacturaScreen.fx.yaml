@@ -1,7 +1,7 @@
-FacturasScreen As screen:
+EditFacturaScreen As screen:
     Fill: =RGBA(240, 244, 248, 1)
 
-    SideNavContainer4 As groupContainer.verticalAutoLayoutContainer:
+    SideNavContainerEditFactura As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(26, 26, 46, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
@@ -10,7 +10,7 @@ FacturasScreen As screen:
         Width: =250
         ZIndex: =1
 
-        NavLogoLabel4 As label:
+        NavLogoLabelEditFactura As label:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(15, 15, 30, 1)
@@ -26,7 +26,7 @@ FacturasScreen As screen:
             Width: =250
             ZIndex: =1
 
-        NavDivider4 As rectangle:
+        NavDividerEditFactura As rectangle:
             Fill: =RGBA(255, 255, 255, 0.1)
             Height: =1
             LayoutMaxHeight: =0
@@ -36,7 +36,7 @@ FacturasScreen As screen:
             Width: =250
             ZIndex: =2
 
-        NavHomeBtn4 As button:
+        NavHomeBtnEditFactura As button:
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
@@ -66,7 +66,7 @@ FacturasScreen As screen:
             Width: =250
             ZIndex: =3
 
-        NavClientesBtn4 As button:
+        NavClientesBtnEditFactura As button:
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
@@ -96,7 +96,7 @@ FacturasScreen As screen:
             Width: =250
             ZIndex: =4
 
-        NavTicketsBtn4 As button:
+        NavTicketsBtnEditFactura As button:
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
@@ -126,18 +126,18 @@ FacturasScreen As screen:
             Width: =250
             ZIndex: =5
 
-        NavFacturasBtn4 As button:
+        NavFacturasBtnEditFactura As button:
             Align: =Align.Left
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderThickness: =0
+            Color: =RGBA(200, 200, 220, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(0, 120, 212, 1)
+            Fill: =RGBA(26, 26, 46, 1)
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
             Height: =56
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =RGBA(0, 100, 180, 1)
+            HoverFill: =RGBA(50, 50, 80, 1)
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
             LayoutMinHeight: =0
@@ -156,7 +156,7 @@ FacturasScreen As screen:
             Width: =250
             ZIndex: =6
 
-    ContentArea4 As groupContainer.verticalAutoLayoutContainer:
+    ContentAreaEditFactura As groupContainer.verticalAutoLayoutContainer:
         Fill: =RGBA(240, 244, 248, 1)
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Center
@@ -171,7 +171,7 @@ FacturasScreen As screen:
         X: =250
         ZIndex: =2
 
-        PageTitleLabel4 As label:
+        PageTitleLabelEditFactura As label:
             Align: =Align.Center
             Color: =RGBA(26, 26, 46, 1)
             Font: =Font.'Segoe UI'
@@ -180,11 +180,11 @@ FacturasScreen As screen:
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
             Size: =36
-            Text: ="Facturas"
+            Text: ="Detalle de Factura"
             Width: =800
             ZIndex: =1
 
-        PageSubtitleLabel4 As label:
+        PageSubtitleLabelEditFactura As label:
             Align: =Align.Center
             Color: =RGBA(100, 110, 130, 1)
             Font: =Font.'Segoe UI'
@@ -192,92 +192,108 @@ FacturasScreen As screen:
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
             Size: =18
-            Text: ="Consulta y gestiona tus facturas"
+            Text: ="Consulta y edita los datos de la factura"
             Width: =800
             ZIndex: =2
 
-        Gallery1 As gallery.galleryVertical:
-            BorderColor: =RGBA(245, 245, 245, 1)
-            DelayItemLoading: =true
-            Items: =Invoices
-            Layout: =Layout.Vertical
+        LblTituloFactura As label:
+            Color: =RGBA(50, 49, 48, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =32
             LayoutMaxHeight: =0
             LayoutMaxWidth: =0
-            LayoutMinHeight: =16
-            LayoutMinWidth: =16
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =0
-            TemplateSize: =104
+            Text: ="Titulo"
+            Width: =800
             ZIndex: =3
 
-            TitleFactura As label:
-                Color: =RGBA(50, 49, 48, 1)
-                DisabledColor: =RGBA(161, 159, 157, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =16
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.Title
-                VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 80
-                X: =16
-                Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + FechaFactura.Size * 1.8)) / 2
-                ZIndex: =1
+        TxtTituloFactura As text:
+            BorderColor: =RGBA(220, 222, 230, 1)
+            Color: =RGBA(50, 49, 48, 1)
+            Default: =varFacturaSeleccionada.Title
+            Font: =Font.'Segoe UI'
+            Height: =44
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            LayoutMinHeight: =0
+            LayoutMinWidth: =0
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =800
+            ZIndex: =4
 
-            FechaFactura As label:
-                Color: =RGBA(96, 94, 92, 1)
-                DisabledColor: =RGBA(161, 159, 157, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =Self.Size * 1.8
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =16
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =12
-                Text: =Text(ThisItem.Modified, "dd/mm/yyyy")
-                VerticalAlign: =VerticalAlign.Top
-                Width: =TitleFactura.Width
-                X: =TitleFactura.X
-                Y: =TitleFactura.Y + TitleFactura.Height
-                ZIndex: =2
+        LblFechaFactura As label:
+            Color: =RGBA(50, 49, 48, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            Text: ="Fecha de modificacion"
+            Width: =800
+            ZIndex: =5
 
-            NextArrowFactura As icon.ChevronRight:
-                AccessibleLabel: =Self.Tooltip
-                Color: =RGBA(166, 166, 166, 1)
-                Height: =50
-                Icon: =Icon.ChevronRight
-                OnSelect: =Set(varFacturaSeleccionada, ThisItem); Navigate(EditFacturaScreen, ScreenTransition.Fade)
-                PaddingBottom: =16
-                PaddingLeft: =16
-                PaddingRight: =16
-                PaddingTop: =16
-                Tooltip: ="Ver los detalles de la factura"
-                Width: =50
-                X: =Parent.TemplateWidth - Self.Width - 12
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =3
+        LblFechaValorFactura As label:
+            Color: =RGBA(50, 49, 48, 1)
+            Font: =Font.'Segoe UI'
+            Height: =44
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            Size: =14
+            Text: =Text(varFacturaSeleccionada.Modified, "dd/mm/yyyy")
+            Width: =800
+            ZIndex: =6
 
-            SeparatorFactura As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =8
-                OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
-                Y: =Parent.TemplateHeight - Self.Height
-                ZIndex: =4
+        BtnGuardarFactura As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderThickness: =0
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 120, 212, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =44
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 100, 180, 1)
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            OnSelect: =Patch(Invoices, varFacturaSeleccionada, {Title: TxtTituloFactura.Text}); Back()
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 80, 160, 1)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =15
+            Text: ="Guardar"
+            Width: =380
+            ZIndex: =7
 
-            RectSelectedFactura As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(0, 120, 212, 1)
-                Height: =Parent.TemplateHeight - SeparatorFactura.Height
-                OnSelect: =Select(Parent)
-                Visible: =ThisItem.IsSelected
-                Width: =4
-                ZIndex: =5
-
+        BtnCancelarFactura As button:
+            BorderColor: =RGBA(220, 222, 230, 1)
+            BorderThickness: =1
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            Height: =44
+            HoverBorderColor: =RGBA(220, 222, 230, 1)
+            HoverColor: =RGBA(50, 49, 48, 1)
+            HoverFill: =RGBA(240, 244, 248, 1)
+            LayoutMaxHeight: =0
+            LayoutMaxWidth: =0
+            OnSelect: =Back()
+            PressedBorderColor: =RGBA(220, 222, 230, 1)
+            PressedColor: =RGBA(50, 49, 48, 1)
+            PressedFill: =RGBA(220, 222, 230, 1)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Size: =15
+            Text: ="Cancelar"
+            Width: =380
+            ZIndex: =8

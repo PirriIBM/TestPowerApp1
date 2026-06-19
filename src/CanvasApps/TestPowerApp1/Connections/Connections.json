@@ -1,8 +1,10 @@
 {
   "9e19cf75-0534-4398-bc6c-49be54d390f6": {
+    "appActions": [],
     "connectionRef": {
+      "apiTier": "Standard",
       "displayName": "Flujos lógicos",
-      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1774/1.0.1774.4397/logicflows/icon.png",
+      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1766/1.0.1766.4330/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
         "9e68c04a-c173-4738-be0c-df3fd278807f": {
@@ -15,7 +17,7 @@
           "value": "221cb496-df6a-f111-ab0d-000d3a675809"
         },
         "workflowName": {
-          "value": "5c9b5d38-c57b-f5ba-91af-2ec031247e28"
+          "value": "d6d8c4ed-e8b7-405a-aefa-7b67d20c11a4"
         }
       },
       "parameterHintsV2": {
@@ -29,7 +31,7 @@
           "value": "221cb496-df6a-f111-ab0d-000d3a675809"
         },
         "workflowName": {
-          "value": "5c9b5d38-c57b-f5ba-91af-2ec031247e28"
+          "value": "d6d8c4ed-e8b7-405a-aefa-7b67d20c11a4"
         }
       }
     },
@@ -44,11 +46,15 @@
     "id": "9e19cf75-0534-4398-bc6c-49be54d390f6"
   },
   "9e68c04a-c173-4738-be0c-df3fd278807f": {
-    "appActions": [],
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "SharePoint",
-      "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1814/1.0.1814.4751/sharepointonline/icon.png",
+      "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1813/1.0.1813.4743/sharepointonline/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
       "parameterHints": {},
       "parameterHintsV2": {}
@@ -61,19 +67,22 @@
           },
           "Empleados": {
             "tableName": "a72e6181-9dc0-490c-9a9a-af74a2666642"
+          },
+          "Invoices": {
+            "tableName": "d3aab06b-42cb-4fa6-a0c3-0d1d5eba8924"
           }
         }
       }
     },
     "dataSources": [
       "Documents",
-      "Empleados"
+      "Empleados",
+      "Invoices"
     ],
     "dependencies": {},
     "dependents": [
       "9e19cf75-0534-4398-bc6c-49be54d390f6"
     ],
-    "endpoints": [],
     "id": "9e68c04a-c173-4738-be0c-df3fd278807f"
   }
 }

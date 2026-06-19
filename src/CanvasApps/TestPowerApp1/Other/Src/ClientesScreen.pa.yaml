@@ -152,6 +152,36 @@ Screens:
                   Text: ="Tickets"
                   VerticalAlign: =%VerticalAlign.RESERVED%.Middle
                   Width: =250
+            - NavFacturasBtn2:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  Align: =Align.Left
+                  BorderColor: =RGBA(0, 0, 0, 0)
+                  BorderThickness: =0
+                  Color: =RGBA(200, 200, 220, 1)
+                  DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                  DisabledColor: =ColorFade(Self.Fill, 90%)
+                  DisabledFill: =ColorFade(Self.Fill, 70%)
+                  Fill: =RGBA(26, 26, 46, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  Height: =56
+                  HoverBorderColor: =RGBA(0, 0, 0, 0)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =RGBA(50, 50, 80, 1)
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  OnSelect: =Navigate(FacturasScreen, ScreenTransition.Fade)
+                  PaddingLeft: =24
+                  PressedBorderColor: =RGBA(0, 0, 0, 0)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(0, 80, 160, 1)
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Text: ="Facturas"
+                  Width: =250
       - ContentArea2:
           Control: GroupContainer@1.5.0
           Variant: AutoLayout

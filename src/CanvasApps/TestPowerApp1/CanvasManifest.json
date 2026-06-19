@@ -137,6 +137,7 @@
     "ClientesScreen",
     "EditDocScreen",
     "EditEmpleadoScreen",
+    "FacturasScreen",
     "Screen1",
     "TicketsScreen"
   ]
