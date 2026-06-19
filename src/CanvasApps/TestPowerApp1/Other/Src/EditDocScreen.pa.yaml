@@ -1,0 +1,356 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  EditDocScreen:
+    Properties:
+      Fill: =RGBA(240, 244, 248, 1)
+      LoadingSpinnerColor: =RGBA(0, 51, 102, 1)
+    Children:
+      - SideNavContainerEditDoc:
+          Control: GroupContainer@1.5.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(26, 26, 46, 1)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Stretch
+            LayoutDirection: =LayoutDirection.Vertical
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =250
+          Children:
+            - NavLogoLabelEditDoc:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Fill: =RGBA(15, 15, 30, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Bold
+                  Height: =80
+                  PaddingLeft: =16
+                  PaddingRight: =16
+                  Size: =20
+                  Text: ="MyApp"
+                  Width: =250
+            - NavDividerEditDoc:
+                Control: Rectangle@2.3.0
+                Properties:
+                  BorderColor: =RGBA(0, 0, 255, 1)
+                  Fill: =RGBA(255, 255, 255, 0.1)
+                  Height: =1
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  Width: =250
+            - NavHomeBtnEditDoc:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  Align: =Align.Left
+                  BorderColor: =RGBA(0, 0, 0, 0)
+                  BorderThickness: =0
+                  Color: =RGBA(200, 200, 220, 1)
+                  DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                  DisabledColor: =ColorFade(Self.Fill, 90%)
+                  DisabledFill: =ColorFade(Self.Fill, 70%)
+                  Fill: =RGBA(26, 26, 46, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  Height: =56
+                  HoverBorderColor: =RGBA(0, 0, 0, 0)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =RGBA(50, 50, 80, 1)
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  OnSelect: =Navigate(Screen1, ScreenTransition.Fade)
+                  PaddingLeft: =24
+                  PressedBorderColor: =RGBA(0, 0, 0, 0)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(0, 80, 160, 1)
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Text: ="Home"
+                  Width: =250
+            - NavClientesBtnEditDoc:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  Align: =Align.Left
+                  BorderColor: =RGBA(0, 0, 0, 0)
+                  BorderThickness: =0
+                  Color: =RGBA(200, 200, 220, 1)
+                  DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                  DisabledColor: =ColorFade(Self.Fill, 90%)
+                  DisabledFill: =ColorFade(Self.Fill, 70%)
+                  Fill: =RGBA(26, 26, 46, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  Height: =56
+                  HoverBorderColor: =RGBA(0, 0, 0, 0)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =RGBA(50, 50, 80, 1)
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  OnSelect: =Navigate(ClientesScreen, ScreenTransition.Fade)
+                  PaddingLeft: =24
+                  PressedBorderColor: =RGBA(0, 0, 0, 0)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(0, 80, 160, 1)
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Text: ="Clientes"
+                  Width: =250
+            - NavTicketsBtnEditDoc:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  Align: =Align.Left
+                  BorderColor: =RGBA(0, 0, 0, 0)
+                  BorderThickness: =0
+                  Color: =RGBA(200, 200, 220, 1)
+                  DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                  DisabledColor: =ColorFade(Self.Fill, 90%)
+                  DisabledFill: =ColorFade(Self.Fill, 70%)
+                  Fill: =RGBA(26, 26, 46, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  Height: =56
+                  HoverBorderColor: =RGBA(0, 0, 0, 0)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =RGBA(50, 50, 80, 1)
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  OnSelect: =Navigate(TicketsScreen, ScreenTransition.Fade)
+                  PaddingLeft: =24
+                  PressedBorderColor: =RGBA(0, 0, 0, 0)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(0, 80, 160, 1)
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Text: ="Tickets"
+                  Width: =250
+      - ContentAreaEditDoc:
+          Control: GroupContainer@1.5.0
+          Variant: AutoLayout
+          Properties:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(240, 244, 248, 1)
+            Height: =Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =16
+            PaddingBottom: =32
+            PaddingLeft: =32
+            PaddingRight: =32
+            PaddingTop: =32
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =Parent.Width - 250
+            X: =250
+          Children:
+            - PageTitleLabelEditDoc:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(26, 26, 46, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Bold
+                  Height: =80
+                  Size: =36
+                  Text: ="Editar Documento"
+                  Width: =800
+            - PageSubtitleLabelEditDoc:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(100, 110, 130, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Font: =Font.'Segoe UI'
+                  Height: =50
+                  Size: =18
+                  Text: ="Modifica los datos del documento seleccionado"
+                  Width: =800
+            - LblNombreDoc:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(50, 49, 48, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =32
+                  Size: =14
+                  Text: ="Nombre"
+                  Width: =800
+            - TxtNombreDoc:
+                Control: Classic/TextInput@2.3.2
+                Properties:
+                  Align: =%Align.RESERVED%.Left
+                  BorderColor: =RGBA(220, 222, 230, 1)
+                  BorderThickness: =1
+                  Color: =RGBA(50, 49, 48, 1)
+                  Default: =varDocSeleccionado.Name
+                  DisabledBorderColor: =ColorFade(Self.BorderColor, 40%)
+                  DisabledColor: =ColorFade(Self.Color, 40%)
+                  DisabledFill: =Self.Fill
+                  DisplayMode: =%DisplayMode.RESERVED%.Edit
+                  FocusedBorderThickness: =3
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =%FontWeight.RESERVED%.Normal
+                  Format: =%TextFormat.RESERVED%.Text
+                  Height: =44
+                  HoverBorderColor: =Self.Color
+                  HoverColor: =Self.Color
+                  HoverFill: =Self.Fill
+                  LayoutMinHeight: =0
+                  LayoutMinWidth: =0
+                  Mode: =%TextMode.RESERVED%.SingleLine
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                  Size: =14
+                  VirtualKeyboardMode: =%VirtualKeyboardMode.RESERVED%.Auto
+                  Width: =800
+            - LblAutorDocTitulo:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(50, 49, 48, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =32
+                  Size: =14
+                  Text: ="Autor"
+                  Width: =800
+            - LblAutorDocValor:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(96, 94, 92, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Fill: =RGBA(240, 244, 248, 1)
+                  Font: =Font.'Segoe UI'
+                  Height: =44
+                  Size: =14
+                  Text: =varDocSeleccionado.Author.DisplayName
+                  Width: =800
+            - LblModificadoDocTitulo:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(50, 49, 48, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =32
+                  Size: =14
+                  Text: ="Fecha de modificacion"
+                  Width: =800
+            - LblModificadoDocValor:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(96, 94, 92, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Fill: =RGBA(240, 244, 248, 1)
+                  Font: =Font.'Segoe UI'
+                  Height: =44
+                  Size: =14
+                  Text: =Text(varDocSeleccionado.Modified, "dd/mm/yyyy")
+                  Width: =800
+            - LblCreadoDocTitulo:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(50, 49, 48, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =32
+                  Size: =14
+                  Text: ="Fecha de creacion"
+                  Width: =800
+            - LblCreadoDocValor:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(96, 94, 92, 1)
+                  DisabledColor: =RGBA(186, 186, 186, 1)
+                  Fill: =RGBA(240, 244, 248, 1)
+                  Font: =Font.'Segoe UI'
+                  Height: =44
+                  Size: =14
+                  Text: =Text(varDocSeleccionado.Created, "dd/mm/yyyy")
+                  Width: =800
+            - BtnGuardarDoc:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 0)
+                  BorderThickness: =0
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                  DisabledColor: =ColorFade(Self.Fill, 90%)
+                  DisabledFill: =ColorFade(Self.Fill, 70%)
+                  Fill: =RGBA(0, 120, 212, 1)
+                  Font: =Font.'Segoe UI'
+                  Height: =44
+                  HoverBorderColor: =RGBA(0, 0, 0, 0)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =RGBA(0, 100, 180, 1)
+                  OnSelect: |-
+                    =Patch(Documents, varDocSeleccionado, {Name: TxtNombreDoc.Text}); Back()
+                  PressedBorderColor: =RGBA(0, 0, 0, 0)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(0, 80, 160, 1)
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                  Text: ="Guardar"
+                  Width: =380
+            - BtnCancelarDoc:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =RGBA(220, 222, 230, 1)
+                  BorderThickness: =1
+                  Color: =RGBA(50, 49, 48, 1)
+                  DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                  DisabledColor: =ColorFade(Self.Fill, 90%)
+                  DisabledFill: =ColorFade(Self.Fill, 70%)
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Font: =Font.'Segoe UI'
+                  FontWeight: =FontWeight.Normal
+                  Height: =44
+                  HoverBorderColor: =RGBA(220, 222, 230, 1)
+                  HoverColor: =RGBA(50, 49, 48, 1)
+                  HoverFill: =RGBA(240, 244, 248, 1)
+                  OnSelect: =Back()
+                  PressedBorderColor: =RGBA(220, 222, 230, 1)
+                  PressedColor: =RGBA(50, 49, 48, 1)
+                  PressedFill: =RGBA(220, 222, 230, 1)
+                  RadiusBottomLeft: =8
+                  RadiusBottomRight: =8
+                  RadiusTopLeft: =8
+                  RadiusTopRight: =8
+                  Text: ="Cancelar"
+                  Width: =380

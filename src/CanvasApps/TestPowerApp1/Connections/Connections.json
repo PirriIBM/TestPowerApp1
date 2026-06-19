@@ -1,9 +1,57 @@
 {
-  "9e68c04a-c173-4738-be0c-df3fd278807f": {
+  "9e19cf75-0534-4398-bc6c-49be54d390f6": {
     "connectionRef": {
+      "displayName": "Flujos lógicos",
+      "iconUri": "https://conn-afd-prod-endpoint-bmc9bqahasf3grgk.b01.azurefd.net/v1.0.1774/1.0.1774.4397/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "9e68c04a-c173-4738-be0c-df3fd278807f": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowDisplayName": {
+          "value": "PowerAppV2 -> Crear archivo"
+        },
+        "workflowEntityId": {
+          "value": "221cb496-df6a-f111-ab0d-000d3a675809"
+        },
+        "workflowName": {
+          "value": "5c9b5d38-c57b-f5ba-91af-2ec031247e28"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "9e68c04a-c173-4738-be0c-df3fd278807f"
+        },
+        "workflowDisplayName": {
+          "value": "PowerAppV2 -> Crear archivo"
+        },
+        "workflowEntityId": {
+          "value": "221cb496-df6a-f111-ab0d-000d3a675809"
+        },
+        "workflowName": {
+          "value": "5c9b5d38-c57b-f5ba-91af-2ec031247e28"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppV2->Creararchivo"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "9e68c04a-c173-4738-be0c-df3fd278807f"
+    },
+    "dependents": [],
+    "id": "9e19cf75-0534-4398-bc6c-49be54d390f6"
+  },
+  "9e68c04a-c173-4738-be0c-df3fd278807f": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
       "displayName": "SharePoint",
-      "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1813/1.0.1813.4743/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+      "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1814/1.0.1814.4751/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
     },
     "datasets": {
       "https://viewnextdev.sharepoint.com/sites/DevelopersVN": {
@@ -22,7 +70,10 @@
       "Empleados"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "9e19cf75-0534-4398-bc6c-49be54d390f6"
+    ],
+    "endpoints": [],
     "id": "9e68c04a-c173-4738-be0c-df3fd278807f"
   }
 }

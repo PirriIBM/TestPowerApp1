@@ -8,6 +8,8 @@
 # ************************************************************************************************
 EditorState:
   ScreensOrder:
-    - Screen1
     - ClientesScreen
+    - EditDocScreen
+    - EditEmpleadoScreen
+    - Screen1
     - TicketsScreen

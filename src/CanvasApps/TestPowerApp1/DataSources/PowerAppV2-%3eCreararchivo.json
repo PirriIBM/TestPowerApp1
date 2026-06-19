@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "bc51d816-43bd-4336-bb2d-287d67ebf47a",
+    "Name": "PowerAppV2->Creararchivo",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "221cb496-df6a-f111-ab0d-000d3a675809"
+  }
+]

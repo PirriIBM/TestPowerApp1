@@ -80,6 +80,11 @@
     <RootComponents>
       <RootComponent type="300" schemaName="vnx_testpowerapp1_6c145" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="29" displayName="PowerAppV2 -&gt; Crear archivo" solution="Active" id="{221cb496-df6a-f111-ab0d-000d3a675809}" />
+        <Dependent type="300" schemaName="vnx_testpowerapp1_6c145" displayName="TestPowerApp1" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
